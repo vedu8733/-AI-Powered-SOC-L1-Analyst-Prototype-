@@ -81,6 +81,9 @@ flowchart TD
     H --> I[Mailtrap SMTP]
     I --> J[SOC Analyst Email Inbox]
 
+```
+
+
 ---
 
 ## ✉️ Why Mailtrap Instead of Gmail?  
@@ -116,4 +119,8 @@ This project is a **mini SOC automation prototype**:
 - Demonstrates real-world SOC automation using **SIEM + Automation + Threat Intelligence**  
 
 ---
+
+
+
+
 
