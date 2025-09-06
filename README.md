@@ -80,3 +80,40 @@ flowchart TD
     G --> H[Generate HTML Email]
     H --> I[Mailtrap SMTP]
     I --> J[SOC Analyst Email Inbox]
+
+---
+
+## ✉️ Why Mailtrap Instead of Gmail?  
+
+- **Gmail SMTP** requires production-ready domain + complex security configs (OAuth, App Passwords, TLS).  
+- My project runs on **localhost (development mode)** → Gmail setup is not reliable.  
+
+**Mailtrap** is designed for safe email testing:  
+- Captures emails in a sandbox  
+- No risk of sending real emails accidentally  
+- Easy to debug and inspect alerts  
+
+👉 Once deployed in production, I can switch to **Gmail/Outlook SMTP**.  
+
+---
+
+## 🚀 Future Improvements  
+
+- Add more **Wazuh rules** (privilege escalation, file integrity monitoring, etc.)  
+- Integrate with **production email services** (Gmail/Outlook SMTP)  
+- Add **SIEM dashboards** (Kibana/Grafana) for visualization  
+- Use **AI/LLMs** for log summarization & automated recommendations  
+- Connect with **ticketing systems** (Jira, ServiceNow) for automated incident creation  
+
+---
+
+## 📌 Summary  
+
+This project is a **mini SOC automation prototype**:  
+- Detects failed logins (4625) in real time  
+- Enriches alerts with **VirusTotal reputation check**  
+- Sends structured alerts via **email**  
+- Demonstrates real-world SOC automation using **SIEM + Automation + Threat Intelligence**  
+
+---
+
